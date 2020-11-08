@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.desafioandroidcore.R
 import com.example.desafioandroidcore.ui.mainmenu.MainActivity
 import kotlinx.android.synthetic.main.activity_credentials.*
@@ -28,5 +29,4 @@ class RegisterFragment : Fragment() {
 
         return view
     }
-
 }

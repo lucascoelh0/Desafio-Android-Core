@@ -6,10 +6,13 @@
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbarCredentials"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:titleTextColor="#FFF"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorPrimary"
+        android:theme="@style/toolbarTheme"
+        app:title="@string/nome_app"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/colorWhite"/>
 
 </LinearLayout>
