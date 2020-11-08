@@ -1,4 +1,4 @@
-package com.example.desafioandroidcore.ui.domain
+package com.example.desafioandroidcore.ui.restaurante
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.desafioandroidcore.R
-import kotlinx.android.synthetic.main.card_restaurant.view.*
 
 class RestaurantesAdapter(
     private val listaRestaurantes: ArrayList<Restaurante>,

@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.desafioandroidcore.R
-import com.example.desafioandroidcore.ui.domain.Restaurante
-import com.example.desafioandroidcore.ui.domain.RestaurantesAdapter
+import com.example.desafioandroidcore.ui.restaurante.Restaurante
+import com.example.desafioandroidcore.ui.restaurante.RestaurantesAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), RestaurantesAdapter.OnClickRestauranteListener {
@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity(), RestaurantesAdapter.OnClickRestaurante
     }
 
     override fun onClickRestaurante(position: Int) {
-        val restaurante = listaRestaurantes[position]
         adapter.notifyItemChanged(position)
     }
 

@@ -1,4 +1,4 @@
-package com.example.desafioandroidcore.ui.domain
+package com.example.desafioandroidcore.ui.restaurante
 
 class Restaurante(
     val nome: String,
