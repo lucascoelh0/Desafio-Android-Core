@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_margin="10dp"
-        app:cardCornerRadius="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -24,7 +25,7 @@
                 android:id="@+id/ivImgRestaurante"
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
-                android:scaleType="fitXY"/>
+                android:scaleType="center" />
 
             <TextView
                 android:id="@+id/tvNomeRestaurante"
@@ -32,40 +33,43 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_regular"
                 android:text="@string/tony_romas"
                 android:textColor="@color/colorBlack"
-                android:textStyle="bold"
-                android:fontFamily="@font/roboto_regular"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvEnderecoRestaurante"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorGrey"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/roboto_regular"
                 android:text="@string/placeholder_address"
-                android:layout_marginStart="10dp"/>
+                android:textColor="@color/colorGrey" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/tvFechaAs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorGrey"
-                    android:text="@string/fecha_as"/>
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/fecha_as"
+                    android:textColor="@color/colorGrey" />
 
                 <TextView
                     android:id="@+id/tvHorarioQueFecha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorGrey"
                     android:layout_marginStart="5dp"
-                    android:text="@string/placeholder_horario"/>
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/placeholder_horario"
+                    android:textColor="@color/colorGrey" />
 
             </LinearLayout>
 

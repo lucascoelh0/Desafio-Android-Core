@@ -1,16 +1,12 @@
-package com.example.desafioandroidcore.ui.credentials
+package com.example.desafioandroidcore.ui.ui
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.desafioandroidcore.R
-import com.example.desafioandroidcore.ui.mainmenu.MainActivity
-import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_login.view.*
 
 class LoginFragment : Fragment() {
@@ -24,7 +20,7 @@ class LoginFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_login, container, false)
 
         view.btnLogin.setOnClickListener {
-            startActivity(Intent(context, MainActivity::class.java))
+            findNavController().navigate(R.id.action_loginFragment_to_restaurantesFragment)
         }
 
         view.btnRegister.setOnClickListener {

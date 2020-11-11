@@ -9,4 +9,7 @@
     <color name="colorBlack">#000</color>
     <color name="colorLightGrey">#DfE5EC</color>
     <color name="colorRestaurantes">#DDD</color>
+    <color name="colorToolbar">#3F51B5</color>
+    <color name="transparent">#00000000</color>
+
 </resources>

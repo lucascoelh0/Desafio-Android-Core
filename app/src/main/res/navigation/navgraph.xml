@@ -7,16 +7,53 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.desafioandroidcore.ui.credentials.LoginFragment"
+        android:name="com.example.desafioandroidcore.ui.ui.LoginFragment"
         android:label="@string/nome_app"
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_restaurantesFragment"
+            app:destination="@id/restaurantesFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.desafioandroidcore.ui.credentials.RegisterFragment"
+        android:name="com.example.desafioandroidcore.ui.ui.RegisterFragment"
         android:label="@string/register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_restaurantesFragment"
+            app:destination="@id/restaurantesFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantesFragment"
+        android:name="com.example.desafioandroidcore.ui.restaurante.RestaurantesFragment"
+        android:label="@string/nome_app"
+        tools:layout="@layout/fragment_cardapio">
+        <action
+            android:id="@+id/action_restaurantesFragment_to_cardapioFragment"
+            app:destination="@id/cardapioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardapioFragment"
+        android:name="com.example.desafioandroidcore.ui.restaurante.CardapioFragment"
+        android:label=""
+        tools:layout="@layout/fragment_restaurantes">
+        <argument
+            android:name="restaurante"
+            app:argType="com.example.desafioandroidcore.ui.restaurante.Restaurante" />
+        <action
+            android:id="@+id/action_cardapioFragment_to_pratoFragment"
+            app:destination="@id/pratoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pratoFragment"
+        android:name="com.example.desafioandroidcore.ui.restaurante.PratoFragment"
+        android:label=""
+        tools:layout="@layout/fragment_prato" />
 </navigation>
