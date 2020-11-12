@@ -1,14 +1,12 @@
 package com.example.desafioandroidcore.ui.restaurante
 
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -38,8 +36,6 @@ class CardapioFragment : Fragment(), CardapioAdapter.OnClickCardapioListener {
         recyclerView?.layoutManager = GridLayoutManager(context, 2)
         recyclerView?.setHasFixedSize(true)
 
-
-
         restaurante?.img?.let {
             view.findViewById<ImageView>(R.id.ivImgRestauranteCardapio).setImageResource(
                 it
@@ -54,7 +50,8 @@ class CardapioFragment : Fragment(), CardapioAdapter.OnClickCardapioListener {
     }
 
     override fun onClickCardapio(position: Int) {
-        findNavController().navigate(R.id.action_cardapioFragment_to_pratoFragment)
+        val action = CardapioFragmentDirections.actionCardapioFragmentToPratoFragment(restaurante!!)
+        findNavController().navigate(action)
     }
 
     fun getAllPratos(): ArrayList<String?> {
@@ -66,9 +63,4 @@ class CardapioFragment : Fragment(), CardapioAdapter.OnClickCardapioListener {
 
         return lista
     }
-
-
-//            = arrayListOf(
-//        restaurante?.pratoPrincipal
-//    )
 }

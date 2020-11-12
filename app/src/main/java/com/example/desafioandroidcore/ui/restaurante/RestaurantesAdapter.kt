@@ -13,7 +13,8 @@ class RestaurantesAdapter(
     val listener: OnClickRestauranteListener
 ) : RecyclerView.Adapter<RestaurantesAdapter.RestaurantesViewHolder>() {
 
-    var restauranteAdapter: Restaurante = Restaurante("", "", "", "", R.drawable.image1, R.drawable.image4)
+    var restauranteAdapter: Restaurante =
+        Restaurante("", "", "", "", R.drawable.image1, R.drawable.image4)
 
     interface OnClickRestauranteListener {
         fun onClickRestaurante(position: Int)
@@ -43,7 +44,7 @@ class RestaurantesAdapter(
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): RestaurantesAdapter.RestaurantesViewHolder {
+    ): RestaurantesViewHolder {
         val itemView: View =
             LayoutInflater.from(parent.context).inflate(R.layout.card_restaurante, parent, false)
         return RestaurantesViewHolder(itemView)

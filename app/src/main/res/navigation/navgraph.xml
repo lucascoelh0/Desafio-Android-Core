@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.desafioandroidcore.ui.ui.LoginFragment"
+        android:name="com.example.desafioandroidcore.ui.login.LoginFragment"
         android:label="@string/nome_app"
         tools:layout="@layout/fragment_login">
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.desafioandroidcore.ui.ui.RegisterFragment"
+        android:name="com.example.desafioandroidcore.ui.login.RegisterFragment"
         android:label="@string/register"
         tools:layout="@layout/fragment_register">
         <action
@@ -55,5 +55,9 @@
         android:id="@+id/pratoFragment"
         android:name="com.example.desafioandroidcore.ui.restaurante.PratoFragment"
         android:label=""
-        tools:layout="@layout/fragment_prato" />
+        tools:layout="@layout/fragment_prato" >
+        <argument
+            android:name="restaurante_prato"
+            app:argType="com.example.desafioandroidcore.ui.restaurante.Restaurante" />
+    </fragment>
 </navigation>

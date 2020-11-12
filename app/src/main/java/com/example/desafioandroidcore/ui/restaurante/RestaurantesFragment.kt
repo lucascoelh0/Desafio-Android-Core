@@ -1,10 +1,10 @@
 package com.example.desafioandroidcore.ui.restaurante
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -33,7 +33,8 @@ class RestaurantesFragment : Fragment(), RestaurantesAdapter.OnClickRestauranteL
 
     override fun onClickRestaurante(position: Int) {
 
-        val action = RestaurantesFragmentDirections.actionRestaurantesFragmentToCardapioFragment(adapter.restauranteAdapter)
+        val action =
+            RestaurantesFragmentDirections.actionRestaurantesFragmentToCardapioFragment(adapter.restauranteAdapter)
 
         findNavController().navigate(action)
     }

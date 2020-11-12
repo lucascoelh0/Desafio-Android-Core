@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".ui.ui.RegisterFragment">
+    tools:context=".ui.login.RegisterFragment">
 
     <LinearLayout
         android:id="@+id/llRegister"
@@ -97,7 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="260dp"
         android:layout_marginEnd="16dp"
         android:background="@color/colorRed"
         android:text="@string/register"

@@ -39,7 +39,7 @@ class CardapioAdapter(
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): CardapioAdapter.CardapioViewHolder {
+    ): CardapioViewHolder {
         val itemView: View =
             LayoutInflater.from(parent.context).inflate(R.layout.card_prato, parent, false)
         return CardapioViewHolder(itemView)

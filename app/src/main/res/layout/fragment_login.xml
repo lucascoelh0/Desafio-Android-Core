@@ -5,9 +5,9 @@
     android:id="@+id/fragmentLogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="60dp"
+    android:layout_marginTop="90dp"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".ui.ui.LoginFragment">
+    tools:context=".ui.login.LoginFragment">
 
     <LinearLayout
         android:id="@+id/llLogin"
