@@ -29,4 +29,6 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="placeholder_nome_prato">Salada com molho Gengibre</string>
     <string name="pratos_principais">Pratos principais</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="pao_com_ovo">Pão com ovo</string>
 </resources>
