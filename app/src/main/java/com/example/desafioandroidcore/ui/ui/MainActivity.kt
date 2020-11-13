@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbarCredentials)
 
         navController = findNavController(R.id.navHostMain)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
 
         navController.addOnDestinationChangedListener { _, destination, arguments ->
             when (destination.id) {
@@ -36,6 +35,13 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+        appBarConfiguration = AppBarConfiguration
+            .Builder(
+                R.id.loginFragment,
+                R.id.restaurantesFragment
+            )
+            .build()
 
         setupActionBarWithNavController(navController, appBarConfiguration)
     }
